@@ -8,4 +8,5 @@ def main(request):
 
 def document(request):
     template_name = "djangokor/document.html"
+    print("test temp print")
     return render(request, template_name, {'title': '목차','text':'장고 한글 문서 목차'})

@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from djangokor.views import main
+from djangokor.views import main,  document
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^document/', document, name="document"),
     url(r'^$', main, name="main"),
+
+
 ]
